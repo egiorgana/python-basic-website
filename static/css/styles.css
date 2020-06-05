@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: powderblue;
+}
+
+h1{
+    color: royalblue;
+    font-size: 50px;
+}

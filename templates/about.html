@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Eliher Giorgana Portfolio{% endblock %}
+{% block content %}
+<div class="container">
+    <h1>About Me...</h1>
+    <ul>
+        {% for name in names %}
+            {% if name == 'Eliher' %}
+                <h3>Eliher is the best!!</h3>
+            {% else %}
+                <li><b>{{ name }}</b></li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

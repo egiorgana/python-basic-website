@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}My Friends{% endblock %}
+{% block content %}
+<div class="container">
+    <h1>Friends...</h1>
+    <form action="/friends" method="POST">
+        <input type="text" placeholder="Name" name="name">
+        <input type="submit" value="Add Name" class="btn btn-info">
+    </form><br>
+    {% for friend in friends %}
+    <h4>{{ friend.name }} <a href="/update/{{ friend.id }}" class="btn btn-outline-danger btn-sm">Update</a></h4>
+    {% endfor %}
+</div>
+{% endblock %}
